@@ -26,3 +26,5 @@ gradle-app.setting
 .idea/tasks.xml
 .idea/gradle.xml
 .idea/libraries/
+
+src/main/resources/gcm.key
