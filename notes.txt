@@ -1,0 +1,17 @@
+app sees all buzzes
+app gets GCM push notif on new buzz
+
+app first time:
+    send id to server
+    get all buzzes
+
+app start:
+    get all buzzes
+
+on new buzz:
+    GCM push notif (HTTP)
+    low TTL
+
+user sends new buzz:
+    to GCM (XMPP)
+
