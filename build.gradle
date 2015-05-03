@@ -1,7 +1,10 @@
 apply plugin: 'java'
+apply plugin: 'application'
 
 sourceCompatibility = 1.8
 version = '0.1'
+
+mainClassName='Server'
 
 repositories {
     mavenCentral()
@@ -12,10 +15,4 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'com.jcabi:jcabi-http:1.10.3'
     compile 'javax.json:javax.json-api:1.0'
-}
-
-task run(type: JavaExec, dependsOn: 'classes') {
-	main = 'Server'
-	classpath = sourceSets.main.runtimeClasspath
-	classpath += configurations.runtime
 }
