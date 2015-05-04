@@ -2,16 +2,16 @@ app sees all buzzes
 app gets GCM push notif on new buzz
 
 app first time:
-    send id to server
-    get all buzzes
+    send id to server /newUser
+    get all buzzes /posts
 
 app start:
-    get all buzzes
+    get all buzzes /posts
 
 on new buzz:
     GCM push notif (HTTP)
     low TTL
 
 user sends new buzz:
-    to GCM (XMPP)
+    to GCM /newPost
 
